@@ -1,0 +1,37 @@
+[
+ {
+  "path": "/packages/iot/pahomqtt", 
+  "ver": "v1.1.0", 
+  "name": "PAHOMQTT"
+ }, 
+ {
+  "path": "/packages/iot/webnet", 
+  "ver": "v2.0.3", 
+  "name": "WEBNET"
+ }, 
+ {
+  "path": "/packages/iot/WiFi/wlanmarvell", 
+  "ver": "latest", 
+  "name": "WLANMARVELL"
+ }, 
+ {
+  "path": "/packages/iot/WiFi/rw007", 
+  "ver": "latest", 
+  "name": "RW007"
+ }, 
+ {
+  "path": "/packages/language/JSON/cJSON", 
+  "ver": "v1.7.15", 
+  "name": "CJSON"
+ }, 
+ {
+  "path": "/packages/multimedia/PainterEngine/PainterEngine_AUX", 
+  "ver": "latest", 
+  "name": "PAINTERENGINE_AUX"
+ }, 
+ {
+  "path": "/packages/peripherals/kendryte-sdk", 
+  "ver": "v0.5.7", 
+  "name": "KENDRYTE_SDK"
+ }
+]

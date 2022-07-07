@@ -1,0 +1,9 @@
+eclipse.preferences.version=1
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.553091094/PATH/delimiter=;
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.553091094/PATH/operation=replace
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.553091094/PATH/value=D\:\\RT-ThreadStudio\\platform\\env_released\\env\\tools\\Python27\\Scripts;G\:\\GraduationProject\\BaiduNetdiskWorkspace\\gcc\\xpack-riscv-none-embed-gcc-8.3.0-1.9\\bin
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.553091094/RTT_EXEC_PATH/delimiter=;
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.553091094/RTT_EXEC_PATH/operation=replace
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.553091094/RTT_EXEC_PATH/value=C\:\\sdk\\xpack-riscv-none-embed-gcc-8.3.0-2.2\\bin
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.553091094/append=true
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.553091094/appendContributed=true
