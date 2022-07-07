@@ -13,7 +13,7 @@ clone本项目到本地，随后使用Rt-Thread-Studio打开并构建。后前�
 
 上电运行，终端出现以下画面说明配置成功
 
-[](https://s2.loli.net/2022/07/07/GctJnkoFsZBAu7M.png)
+![img](https://s2.loli.net/2022/07/07/GctJnkoFsZBAu7M.png)
 
 若有疑问，参阅下面的 Kendryte K210说明
 
