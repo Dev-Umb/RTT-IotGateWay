@@ -1,3 +1,25 @@
+# 基于Rt-Thread的物联网网关平台设计
+## 说明：
+
+本项目采用Rtthread-Kendryte K210开发板进行构建，是一种依赖WIFI在局域网内部提供数据统计上报支持的物联网网关平台
+
+## 配置方法：
+
+前提：拥有一台可以正常访问的MQTT服务（阿里云、腾讯云、EMQT等皆可）
+
+clone本项目到本地，随后使用Rt-Thread-Studio打开并构建。后前往[./applications/config/config.h](https://github.com/farewell12345/RTT-IotGateWay/blob/master/applications/config/config.h)中进行MQTT配置与Wifi配置
+
+构建并使用[K-Flash](https://github.com/sipeed/kflash_gui/releases)烧录代码到板子中
+
+上电运行，终端出现以下画面说明配置成功
+
+[](https://s2.loli.net/2022/07/07/GctJnkoFsZBAu7M.png)
+
+若有疑问，参阅下面的 Kendryte K210说明
+
+
+
+
 # Kendryte K210板级支持包说明
 
 ## 1. 简介
