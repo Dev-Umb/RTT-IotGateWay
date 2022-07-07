@@ -15,10 +15,41 @@ clone本项目到本地，随后使用Rt-Thread-Studio打开并构建。后前�
 
 ![img](https://s2.loli.net/2022/07/07/GctJnkoFsZBAu7M.png)
 
+可到[/applications/sever/sever.h](https://github.com/farewell12345/RTT-IotGateWay/blob/master/applications/sever/sever.h)配置网关路由，即可在启动后在局域网内向网关发送路由
+
+以下为启动后监测网关路由是否正常启动的测试脚本（需在同一网络环境下测试，IP在网关连接WIFI后会在终端中自行打印，若失败，请检查你的配置）：
+
+```
+from random import random
+from time import sleep
+
+import requests
+
+user_agent_list = [
+    "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36",
+    "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36",
+    "Mozilla/5.0 (Windows NT 10.0; WOW64) Gecko/20100101 Firefox/61.0",
+    "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36",
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.62 Safari/537.36",
+    "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36",
+    "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)",
+    "Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10.5; en-US; rv:1.9.2.15) Gecko/20110303 Firefox/3.6.15",
+    ]
+id = 2
+IP = "192.168.0.102"
+while True:
+    try:
+        requests.get(headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, '
+                                            'like Gecko) Chrome/103.0.0.0 Safari/537.36'},
+                     url=f'http://{IP}/cgi-bin/device/post?id={id}&value=%d' % int(random() * 40))
+        sleep(10)
+    except Exception as e:
+        print(e)
+        sleep(2)
+        continue
+```
+
 若有疑问，参阅下面的 Kendryte K210说明
-
-
-
 
 # Kendryte K210板级支持包说明
 
