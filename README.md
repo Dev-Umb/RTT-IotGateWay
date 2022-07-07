@@ -19,7 +19,7 @@ clone本项目到本地，随后使用Rt-Thread-Studio打开并构建。后前�
 
 以下为启动后监测网关路由是否正常启动的测试脚本（需在同一网络环境下测试，IP在网关连接WIFI后会在终端中自行打印，若失败，请检查你的配置）：
 
-```
+```python
 from random import random
 from time import sleep
 
